@@ -17,6 +17,7 @@ int main () {
     for(int i = 0 ; i < (sizeof(palavra) / sizeof(palavra[0])) ; i++) {
         if ( caractere == palavra[i] ) {
             printf("Esse caractere %c encontrasse na palavra %s\n" , caractere ,  palavra);
+            break;
         }
     }
     
