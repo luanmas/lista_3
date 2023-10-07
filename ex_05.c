@@ -17,6 +17,20 @@ int main () {
 
     int i, j;
 
+    for (int i = 0; palavra[i] != '\0'; i++) {
+        if (palavra[i] == '\n') {
+            palavra[i] = '\0';
+            break;
+        }
+    }
+
+    for (int i = 0; palavra2[i] != '\0'; i++) {
+        if (palavra2[i] == '\n') {
+            palavra2[i] = '\0';
+            break;
+        }
+    }
+
     for (i = 0; palavra[i] != '\0'; i++) {
         palavraConcatenada[i] = palavra[i];
     }
