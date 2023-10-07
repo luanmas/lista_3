@@ -4,6 +4,21 @@
 
 #define TAMPALAVRA 20
 
+int com_strcat() {
+    char palavra[TAMPALAVRA];
+    char palavra2[TAMPALAVRA];
+
+    printf("Digite uma palavra: ");
+    fgets(palavra, TAMPALAVRA, stdin);
+
+    printf("Digite outra palavra: ");
+    fgets(palavra2, TAMPALAVRA, stdin);
+
+    strcat(palavra, palavra2);
+
+    printf("Palavra concatenada: %s\n", palavra);
+}
+
 int main () {
     char palavra[TAMPALAVRA];
     char palavra2[TAMPALAVRA];
